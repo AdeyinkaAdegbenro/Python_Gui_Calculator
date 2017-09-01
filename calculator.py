@@ -84,7 +84,7 @@ class Calculator:
         #set equation to empty before deleting screen
         self.equation = ''
         self.screen.configure(state='normal')
-        self.screen.delete(0, END)
+        self.screen.delete('1.0', END)
 
     def insert_screen(self, value,newline=False):
         self.screen.configure(state='normal')
